@@ -33,6 +33,12 @@ run () {
     echo -e "\e[39m"
     newgrp docker
     
+    echo ""
+    echo -e "\e[32mLoggin Back in...."
+    echo -e "\e[39m"
+    sudo -i -u $(whoami)
+    
+    
     
     
 #    us=$(awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd)
